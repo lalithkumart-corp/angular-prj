@@ -3,13 +3,16 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';  
 
 import { AppComponent } from './app.component';
+import { practiceComponent } from './practice/practice.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    practiceComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule
   ],
   bootstrap: [AppComponent]
 })
