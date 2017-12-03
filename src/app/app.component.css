@@ -1,0 +1,24 @@
+.page-wrapper{
+    width: 1000px;
+    margin: 0 auto;
+}
+.page-title{
+    background-color: antiquewhite;
+    text-align: center;
+}
+.tab-header{
+    height: 25px;
+    padding-left: 10px;
+}
+.tab-menu{
+    padding: 5px 15px;
+    border-bottom: 1px solid;
+    text-decoration: none;
+}
+.tab-menu.active-class{
+    background-color: #c0efac;
+}
+.tab-container{
+    min-height: 400px;
+    padding: 10px;
+}
