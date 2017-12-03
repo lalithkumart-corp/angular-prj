@@ -4,11 +4,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { practiceComponent } from './practice/practice.component';
+import { StudentComponent } from './student/student.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     practiceComponent
+    StudentComponent
   ],
   imports: [
     BrowserModule,
