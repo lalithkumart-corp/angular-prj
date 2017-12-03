@@ -5,12 +5,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { practiceComponent } from './practice/practice.component';
 import { StudentComponent } from './student/student.component';
+import { EmpComponent } from './employee/emp.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     practiceComponent
     StudentComponent
+    EmpComponent
   ],
   imports: [
     BrowserModule,
