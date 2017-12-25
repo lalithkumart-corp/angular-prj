@@ -1,0 +1,18 @@
+.emp-rec-container{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 50px;
+    border: 1px solid;
+}
+.comp-header{
+    padding-left: 25px;
+}
+.emp-rec-container table{
+    border-spacing: 0px;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+.emp-rec-container table td{
+    border: 1px solid;
+    padding: 7px;
+}

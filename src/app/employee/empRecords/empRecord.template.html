@@ -1,0 +1,21 @@
+<div class='emp-rec-container'>
+    <h4 class='comp-header'>Employee Records table</h4>
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+            <th>UserName</th>
+            <th>Email</th>
+            <th>Phone No</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let anEmpData of empData">
+                <td>{{ anEmpData.id }}</td>
+                <td>{{ anEmpData.name }}</td>
+                <td>{{ anEmpData.username }}</td>
+                <td>{{ anEmpData.email }}</td>
+                <td>{{ anEmpData.phone }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,21 @@
+<div class='emp-tofu'>
+    <h4 class='comp-header'>Recently created employee!</h4>
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+            <th>UserName</th>
+            <th>Email</th>
+            <th>Phone No</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let anEmpData of recentEmpData">
+                <td>{{ anEmpData.id }}</td>
+                <td>{{ anEmpData.name }}</td>
+                <td>{{ anEmpData.username }}</td>
+                <td>{{ anEmpData.email }}</td>
+                <td>{{ anEmpData.phone }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,17 @@
+.emp-tofu{
+    border: 1px solid;
+    margin-top: 10px;
+    padding-bottom: 50px;
+}
+.comp-header{
+    padding-left: 25px;
+}
+.emp-tofu table{
+    border-spacing: 0px;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+.emp-tofu table td{
+    border: 1px solid;
+    padding: 7px;
+}
