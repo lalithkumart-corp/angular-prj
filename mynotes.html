@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <div>
+            <h2>Summary: Reg SERVICE state(data-model), and its Singleton behaviour across components</h2>
+            <p>Date: 25/12/2017</p>
+            <p><b> <i>ISSUE:</i> </b>
+                I had 1 service , and 2 components.
+                The service had one variable. This service had been included in provider array in both components
+                <b>When one component calls the service method block & fetch data from API and updates the datamodel in the service, then this updated dataModel in service is not been seen/available for the other component</b>
+                But, i need to read/get the updated dataModel from service in my other component.
+            </p>
+            <p>
+                <b> <i>SOLUTION: </i></b>
+                When we include a service in 'providers', then it is instantiated and this state is maintained between its component as well as its child components.
+
+                And, if we include the service in both components provider array, then it is no more following singleton. The state will be independent and not shared between them.
+
+                So, include your service only at parent component or your root component.(or module)
+
+                I too faced this issue and solved with help of this solution here, <a href="https://stackoverflow.com/a/38034298/5730167">https://stackoverflow.com/a/38034298/5730167</a>.
+
+                So, be carefull in including the service in module, component... based on your need.
+            </p>
+            <p>My Commit URL: <a href='https://github.com/lalithkumart-corp/angular-prj/commit/4e5092767f56c3e8f3f981127e56fdbb5d974ee5'>https://github.com/lalithkumart-corp/angular-prj/commit/4e5092767f56c3e8f3f981127e56fdbb5d974ee5</a></p>
+        </div>
+    </body>
+</html>
